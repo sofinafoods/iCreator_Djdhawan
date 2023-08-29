@@ -1,5 +1,5 @@
 000100000000    ? * ------------------------------------------------------------------------------------------ *
-000200000000    ? *          ?                     (©) Sofina Foods Inc. - 2010                     ?          *
+000200000000    ? *          ?                     (Â©) Sofina Foods Inc. - 2010                     ?          *
 000300000000    ? * ------------------------------------------------------------------------------------------ *
 000400000000    ? *                                                                                            *
 000500000000    ? *          ?Maintain the BOM Detail File  -  Costing System - Bill of Material               *
@@ -19,7 +19,7 @@
 001900150624    ? * 15-06-24  RS    Introduction of BOM-active flag.  Better window restoring after prompt.    *
 001901170321    ? * 17-03-21  RS    Better handling of Component input for non Materials: Shift left no tail.  *
 001902230524    ? * 20230524  LX    Add new option for explosion info                                          *
-002000000000    ? *                                                                                            *
+002000000000    ? * 20230829  DJ    Testing the edit from Github                                                                                           *
 002100000000    ? * ------------------------------------------------------------------------------------------ *
 002200000000    ?
 002300000000    ?FCSBOMD#   CF   E             WORKSTN INFDS(@$DSPI)                        Bill of Material Hea
@@ -159,7 +159,7 @@
 014700000000    ?D   ###WD#                       1  0 inz(0)    overlay(###WD@)             Current Panel
 014800000000    ?D   ###WD$                       1    inz('/')  overlay(###WD@:*NEXT)       "of"
 014900000000    ?D   ###WDS                       1  0 inz(1)    overlay(###WD@:*NEXT)       total Nbr panels.
-015000000000    ? * = = = = = = = = = = = = = = = = = = = -¦-
+015000000000    ? * = = = = = = = = = = = = = = = = = = = -Â¦-
 015100000000    ?D  ###WD0                14     14  0 inz(1)                               Starting Panel Nbr
 015200000000    ?
 015300000000    ? *     TABLES
