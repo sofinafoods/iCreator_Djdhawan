@@ -1,0 +1,51 @@
+000100040408    ?********** BEGINNING OF DATA *******************************
+000200230817    ?A*  PHYSICAL FILE - BOM MASTER HISTORY FILE - HEADER
+000300051110    ?
+000400230817    ?A          R CSBOMHHR                  TEXT('BOM Header Record')
+000500051110    ?
+000600051110    ?A            BHCOMP         2S 0       COLHDG('Company' 'Number')
+000700150618    ?A            BHACTV         1A         COLHDG('BOM' 'active')
+000800100813    ?A            BHWRKC    R               COLHDG('Work' 'Center')
+000900100813    ?A                                      REFFLD(PMANID OPPROD)
+001000100813    ?A            BHPROD    R               REFFLD(PNUMB  OPPROD)
+001100100714    ?A            BHDESC        30A         COLHDG('Product' 'Description')
+001200170421    ?A            BHLEAD         3S 0       COLHDG('Days' 'Lead' 'Time')
+001300170421    ?A                                      EDTCDE(3)
+001400051111    ?A            BHQTY          9S 4       COLHDG('Run' 'Quantity')
+001500100813    ?A                                      EDTCDE(M)
+001600100813    ?A            BHUNIT    R               REFFLD(PCUNIT OPPROD)
+001700051110    ?A            BHMATC         9S 4       COLHDG('Material' 'Cost')
+001800100813    ?A                                      EDTCDE(M)
+001900051110    ?A            BHLABC         9S 4       COLHDG('Labour' 'Cost')
+002000100813    ?A                                      EDTCDE(M)
+002100051110    ?A            BHOVHC         9S 4       COLHDG('Overhead' 'Cost')
+002200100813    ?A                                      EDTCDE(M)
+002300100714    ?A            BHTPRC         9S 4       COLHDG('Transfer' 'Price')
+002400100813    ?A                                      EDTCDE(M)
+002500100812    ?A            BHMATP    R               COLHDG('Material' 'Cost' 'proposed')
+002600100812     A                                      REFFLD(BHMATC *SRC)
+002700100812    ?A            BHLABP    R               COLHDG('Labour' 'Cost' 'proposed')
+002800100812     A                                      REFFLD(BHLABC *SRC)
+002900100812    ?A            BHOVHP    R               COLHDG('Overhead' 'Cost' 'proposed')
+003000100812     A                                      REFFLD(BHOVHC *SRC)
+003100130906    ?A            BHTPRP    R               COLHDG('Transfer' 'Price' -
+003200130906     A                                      'proposed')
+003300100812     A                                      REFFLD(BHTPRC *SRC)
+003400100714    ?A            BHEDAT         8S 0       COLHDG('Date' 'Record' 'created')
+003500051110    ?A                                      EDTWRD('    -  -  ')
+003600100714    ?A            BHETIM         6S 0       COLHDG('Time' 'Record' 'created')
+003700061220    ?A                                      EDTCDE(6)
+003800100816    ?A            BHEUSR        10A         COLHDG('Record' 'created' 'by User')
+003900100714    ?A            BHCDAT         8S 0       COLHDG('Date' 'Record' 'changed')
+004000051110    ?A                                      EDTWRD('    -  -  ')
+004100100714    ?A            BHCTIM         6S 0       COLHDG('Time' 'Record' 'changed')
+004200061220    ?A                                      EDTCDE(6)
+004300100714    ?A            BHUSID        10A         COLHDG('Record' 'changed' 'by User')
+004400230817    ?A            BHSDTE         8S 0       COLHDG('Effective' 'start' 'date')
+004500230817    ?A                                      EDTWRD('    -  -  ')
+004600230817    ?A            BHEDTE         8S 0       COLHDG('Effective' 'end' 'date')
+004700230817    ?A                                      EDTWRD('    -  -  ')
+004800000000    ? *
+004900040527    ?A          K BHCOMP
+005000040528    ?A          K BHWRKC
+005100040527    ?A          K BHPROD

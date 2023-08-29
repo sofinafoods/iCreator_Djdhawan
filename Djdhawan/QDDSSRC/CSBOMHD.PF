@@ -1,0 +1,42 @@
+000100040408    ?********** BEGINNING OF DATA *******************************
+000200230817    ?A*  PHYSICAL FILE - BOM MASTER HISTORY FILE - DETAIL
+000300051110    ?
+000400230817    ?A          R CSBOMHDR                  TEXT('BOM Detail Record')
+000500051110    ?
+000600051110    ?A            BDCOMP         2S 0       COLHDG('Company' 'Number')
+000700100819    ?A            BDWRKC    R               COLHDG('Work' 'Center')
+000800100819    ?A                                      REFFLD(PMANID OPPROD)
+000900100819    ?A            BDPROD    R               REFFLD(PNUMB  OPPROD)
+001000100714    ?A            BDTYPE         2A         COLHDG('Cost' 'Type')
+001100100714    ?A            BDITEM        11A         COLHDG('Component')
+001200100819    ? *
+001300051111    ?A            BDQTY          9S 4       COLHDG('Required' 'Quantity')
+001400100819    ?A                                      EDTCDE(M)
+001500170228    ?A            BDUNIT         3A         COLHDG('UoM')
+001600100812    ?
+001700051110    ?A            BDCOST         9S 4       COLHDG('Cost')
+001800100819    ?A                                      EDTCDE(M)
+001900100812    ?
+002000100812    ?A            BDCOSP    R               COLHDG('Cost' 'proposed')
+002100100812    ?A                                      REFFLD(BDCOST *SRC)
+002200100812    ?
+002300100714    ?A            BDEDAT         8S 0       COLHDG('Date' 'Record' 'created')
+002400051110    ?A                                      EDTWRD('    -  -  ')
+002500100714    ?A            BDETIM         6S 0       COLHDG('Time' 'Record' 'created')
+002600061220    ?A                                      EDTCDE(6)
+002700100816    ?A            BDEUSR        10          COLHDG('Record' 'created' 'by User')
+002800100714    ?A            BDCDAT         8S 0       COLHDG('Date' 'Record' 'changed')
+002900051110    ?A                                      EDTWRD('    -  -  ')
+003000100714    ?A            BDCTIM         6S 0       COLHDG('Time' 'Record' 'changed')
+003100061220    ?A                                      EDTCDE(6)
+003200100714    ?A            BDUSID        10          COLHDG('Record' 'changed' 'by User')
+003300230817    ?A            BDSDTE         8S 0       COLHDG('Effective' 'start' 'date')
+003400230817    ?A                                      EDTWRD('    -  -  ')
+003500230817    ?A            BDEDTE         8S 0       COLHDG('Effective' 'end' 'date')
+003600230817    ?A                                      EDTWRD('    -  -  ')
+003700000000    ? *
+003800040528    ?A          K BDCOMP
+003900040528    ?A          K BDWRKC
+004000040528    ?A          K BDPROD
+004100040528    ?A          K BDITEM
+004200040601    ?A          K BDTYPE
