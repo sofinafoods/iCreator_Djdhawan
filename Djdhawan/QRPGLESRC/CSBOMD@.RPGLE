@@ -1,5 +1,5 @@
 000100000000    ? * ------------------------------------------------------------------------------------------ *
-000200000000    ? *          ?                     (©) Sofina Foods Inc. - 2010                     ?          
+000200000000    ? *          ?                     (©) Sofina Foods Inc. - 2010                     ?
 000300000000    ? * ------------------------------------------------------------------------------------------ *
 000400000000    ? *                                                                                            *
 000500000000    ? *          ?Maintain the BOM Detail File  -  Costing System - Bill of Material               *
@@ -19,7 +19,7 @@
 001900150624    ? * 15-06-24  RS    Introduction of BOM-active flag.  Better window restoring after prompt.    *
 001901170321    ? * 17-03-21  RS    Better handling of Component input for non Materials: Shift left no tail.  *
 001902230524    ? * 20230524  LX    Add new option for explosion info                                          *
-002000230919    ? * 20230829  DJ    Testing the edit from Github     - Testing back to back                    *
+002000230919    ? * 20230829  DJ    Testing the edit from Github     - Testing back to back yes                *
 002100000000    ? * ------------------------------------------------------------------------------------------ *
 002200000000    ?
 002300000000    ?FCSBOMD#   CF   E             WORKSTN INFDS(@$DSPI)                        Bill of Material Hea
